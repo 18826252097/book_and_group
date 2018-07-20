@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>通信模块-接口测试</title>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="/public/static/plug/element/css/jquery.json-viewer.css" type="text/css" rel="stylesheet" />
+	<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/public/static/plug/element/js/jquery.json-viewer.js"></script>
+</head>
+<body>
+<div class="container">
+	<!-- 短信发送 Start-->
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class=" panel panel-default">
+				<div class="panel-heading">短信发送</div>
+				<div class="panel-body">
+					<form action="{:url('send_phone')}" method="get">
+						<div class="form-group">
+							<label for="sendMobile">手机号</label>
+							<input name="mobile" type="text" class="form-control" id="sendMobile" value="18819493724">
+						</div>
+						<a class="btn btn-default">提交2</a>
+					</form>
+				</div>
+				<div class="panel-body json-container">
+
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="panel panel-default">
+				<div class="panel-heading">短信验证</div>
+				<div class="panel-body">
+					<form action="{:url('check_phone')}" method="get">
+						<div class="form-group">
+							<label for="checkMobile">手机号</label>
+							<input name="mobile" type="email" class="form-control" id="checkMobile" value="18819493724">
+						</div>
+						<div class="form-group">
+							<label for="codes">验证码</label>
+							<input name="codes" type="text" class="form-control" id="codes" value="">
+						</div>
+						<a class="btn btn-default">提交1</a>
+					</form>
+				</div>
+				<div class="panel-body json-container">
+
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="panel panel-default">
+				<div class="panel-heading">发送邮件</div>
+				<div class="panel-body">
+					<form action="{:url('send_email')}" method="get">
+						<div class="form-group">
+							<label for="sendEmail">收件人地址</label>
+							<input name="to" type="email" class="form-control" id="sendEmail" value="502510773@qq.com">
+						</div>
+
+						<div class="form-group">
+							<label for="subject">邮件主题</label>
+							<input name="subject" type="text" class="form-control" id="subject" value="测试主题">
+						</div>
+						<div class="form-group">
+							<label for="body">邮件内容</label>
+							<input name="body" type="text" class="form-control" id="body" value="测试测试测试">
+						</div>
+						<a class="btn btn-default">提交1</a>
+					</form>
+				</div>
+				<div class="panel-body json-container">
+
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+</div>
+<script type="text/javascript">
+
+	$('form a').click(function () {
+	    var aObj = $(this);
+        var url = $(this).parents('form').attr('action');
+		var data = $(this).parents('form').serialize();
+		$.get(url,data,function (d) {
+            aObj.parents('.panel').find('.json-container').jsonViewer(d)
+		},'json');
+    })
+
+</script>
+</body>
+</html>

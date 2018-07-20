@@ -1,0 +1,1120 @@
+---------------------------------------------------------------
+[ 2018-06-26T10:46:07+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：1.974113s][吞吐率：0.51req/s] [内存消耗：3,281.61kb] [文件加载：75]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4MTE2NkhTd0Z4NiIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"bafc22b576ce66608a7061e06fe482aa"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.066004s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529981166HSwFx6' , 1 , 1) [ RunTime:0.021001s ]
+---------------------------------------------------------------
+[ 2018-06-26T10:46:07+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：2.523144s][吞吐率：0.40req/s] [内存消耗：2,019.54kb] [文件加载：61]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T10:48:24+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：3,212.84kb] [文件加载：73]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4MTMwNFNXVEZsNSIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"bfe744c153d0386165dea88ede6fb7e5"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529981304SWTFl5' , 1 , 1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-26T10:48:24+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：0.120007s][吞吐率：8.33req/s] [内存消耗：1,942.58kb] [文件加载：59]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T10:51:33+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.393022s][吞吐率：2.54req/s] [内存消耗：3,282.01kb] [文件加载：75]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4MTQ5MjMwdmhiUSIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"de4c29b3a5c6ed5cfb0f4072fe0a20bd"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '152998149230vhbQ' , 1 , 1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-26T10:51:33+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：0.432024s][吞吐率：2.31req/s] [内存消耗：2,019.89kb] [文件加载：61]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:03:43+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.580033s][吞吐率：1.72req/s] [内存消耗：3,282.91kb] [文件加载：75]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4MjIyMkRkQm94MyIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"409c955c9ebcac3e72ab577c94e8f99a"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529982222DdBox3' , 1 , 1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-26T11:03:43+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：1.204069s][吞吐率：0.83req/s] [内存消耗：2,019.89kb] [文件加载：61]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:03:45+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.318019s][吞吐率：3.14req/s] [内存消耗：3,282.91kb] [文件加载：75]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4MjIyNEh6TWQ1RCIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"7825112b84e0fb850fed82506f5d7246"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529982224HzMd5D' , 1 , 1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-26T11:03:45+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：0.371021s][吞吐率：2.70req/s] [内存消耗：2,019.89kb] [文件加载：61]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:04:01+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.381022s][吞吐率：2.62req/s] [内存消耗：3,282.90kb] [文件加载：75]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4MjI0MTBIQnExSyIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"ede44d960c01d93cd31eba64b145b0c4"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024002s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '15299822410HBq1K' , 1 , 1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-26T11:04:01+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：0.458027s][吞吐率：2.18req/s] [内存消耗：2,019.89kb] [文件加载：61]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:07:25+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.358020s][吞吐率：2.79req/s] [内存消耗：3,282.90kb] [文件加载：75]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4MjQ0NHdFMXF5bCIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"b654f8395cfc8c4f9e17686a9a75d780"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529982444wE1qyl' , 1 , 1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-26T11:07:25+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：0.418024s][吞吐率：2.39req/s] [内存消耗：2,019.89kb] [文件加载：61]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:09:09+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：3,213.55kb] [文件加载：73]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4MjU0OWN6QmJDTiIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"b4d41bff309d41759e4b12792fd18acc"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529982549czBbCN' , 1 , 1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-26T11:09:09+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：0.107006s][吞吐率：9.35req/s] [内存消耗：1,941.77kb] [文件加载：59]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:16:18+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.371021s][吞吐率：2.70req/s] [内存消耗：3,282.90kb] [文件加载：75]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4Mjk3OHhzTmJVeSIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"e2e75a66d8b9953a984ee6590e74f020"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529982978xsNbUy' , 1 , 1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-26T11:16:18+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：0.425024s][吞吐率：2.35req/s] [内存消耗：2,019.89kb] [文件加载：61]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:16:54+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.922053s][吞吐率：1.08req/s] [内存消耗：3,282.90kb] [文件加载：75]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4MzAxMzg2OGRrdyIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"46a4fde60e41fa6170f67568e3192d8b"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529983013868dkw' , 1 , 1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-26T11:16:54+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：0.973056s][吞吐率：1.03req/s] [内存消耗：2,019.89kb] [文件加载：61]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:16:58+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：6.161352s][吞吐率：0.16req/s] [内存消耗：3,318.94kb] [文件加载：77]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4MzAxMkJ1YllJZiIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"f312d1c26b80d9507a360be67bc85c97"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529983012BubYIf' , 1 , 1) [ RunTime:0.001000s ]
+[ error ] [0]curl出错，错误码:28[D:\project\php_wyt_tp\php\vendor\WxpayAPI_php_v3_0_1\lib\WxPayApi.php:591]
+---------------------------------------------------------------
+[ 2018-06-26T11:16:58+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：6.220356s][吞吐率：0.16req/s] [内存消耗：2,019.88kb] [文件加载：61]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:24:01+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.254015s][吞吐率：3.94req/s] [内存消耗：3,213.55kb] [文件加载：73]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4MzQ0MFRCVkY5RSIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"687750fc06107318cd1a312934b6f85a"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008000s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529983440TBVF9E' , 1 , 1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-26T11:24:01+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：0.666038s][吞吐率：1.50req/s] [内存消耗：1,941.77kb] [文件加载：59]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:27:04+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.239014s][吞吐率：4.18req/s] [内存消耗：3,213.55kb] [文件加载：73]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4MzYyNFJrbkRERSIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"5cdfc7dcc1b83fd2b37e7820be1822ed"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529983624RknDDE' , 1 , 1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-26T11:27:04+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：0.700040s][吞吐率：1.43req/s] [内存消耗：1,942.71kb] [文件加载：59]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:30:29+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.594034s][吞吐率：1.68req/s] [内存消耗：3,283.18kb] [文件加载：75]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4MzgyODRFN1FXRCIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"82a408ece437035c1dab59d6cb9bc33b"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '15299838284E7QWD' , 1 , 1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-26T11:30:29+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：1.254072s][吞吐率：0.80req/s] [内存消耗：1,942.17kb] [文件加载：59]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:30:35+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.317019s][吞吐率：3.15req/s] [内存消耗：3,283.01kb] [文件加载：75]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4MzgzNXc1M2FndCIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"def964eb2e78aaf0a314624620351ca8"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529983835w53agt' , 1 , 1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-26T11:30:35+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：0.363021s][吞吐率：2.75req/s] [内存消耗：2,019.89kb] [文件加载：61]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:32:49+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.303017s][吞吐率：3.30req/s] [内存消耗：3,283.48kb] [文件加载：75]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4Mzk2OUl2OEIzQiIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"9f7eb76888c4699be8db3446d516eea3"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529983969Iv8B3B' , 1 , 1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-26T11:32:49+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：0.346020s][吞吐率：2.89req/s] [内存消耗：2,019.95kb] [文件加载：61]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:32:59+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.342020s][吞吐率：2.92req/s] [内存消耗：3,283.67kb] [文件加载：75]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4Mzk3OU1Jb2JvRCIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"7b13b3b88d4699469ddac6d4e59788cc"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529983979MIoboD' , 1 , 1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-26T11:32:59+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：0.391023s][吞吐率：2.56req/s] [内存消耗：1,943.09kb] [文件加载：59]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:39:28+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.326018s][吞吐率：3.07req/s] [内存消耗：3,283.95kb] [文件加载：75]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4NDM2N0NTRDhZcCIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"4ad7e90b728b0ece1957d444694e745a"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529984367CSD8Yp' , 1 , 1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-26T11:39:28+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：0.370021s][吞吐率：2.70req/s] [内存消耗：1,942.17kb] [文件加载：59]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T11:39:33+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：0.347020s][吞吐率：2.88req/s] [内存消耗：3,283.65kb] [文件加载：75]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk4NDM3M0hPeGxZeSIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"27195d72de884562c751db195c48a3f3"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529984373HOxlYy' , 1 , 1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-26T11:39:33+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：0.392023s][吞吐率：2.55req/s] [内存消耗：2,019.89kb] [文件加载：61]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-26T14:48:15+08:00 ] 127.0.0.1 127.0.0.1 POST /php/index.php/pay/Api/order
+[ info ] 127.0.0.1/php/index.php/pay/Api/order [运行时间：2.185125s][吞吐率：0.46req/s] [内存消耗：3,283.65kb] [文件加载：75]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pay',
+    1 => 'Api',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '625',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '{"data":"eyJnb29kc19jb25maWciOnsib3V0X3RyYWRlX25vIjoiMTUyOTk5NTY5Mm9iNFliUiIsInJlYWxfcGF5IjoxLCJyZW1hcmsiOiJcdTZkNGJcdThiZDVcdTYzYTVcdTUzZTMyIiwiYXR0YWNoIjoiXHU1OTE2XHU4YmVkXHU5MDFhXHU2NTJmXHU0ZWQ4XHU2M2E1XHU1M2UzIiwiZ29vZF90YWdzIjoiaWV4dWUifSwidHlwZSI6Ind4cGF5Iiwid2VpeGluX2NvbmZpZyI6eyJ0cmFkZV90eXBlIjoiQVBQIiwiYXBwaWQiOiJ3eDMwOGRiOTFiZTllNGQ3ZTMiLCJtY2hfaWQiOiIxNTAxOTY2NDUxIiwia2V5Ijoic2hlbnRvbmd5dW5zaHViYW8xMDB6b3VoYWlmZW5nNjYiLCJhcHBfc2VjZXJ0IjoiZjZkMDAzYWZhZmRmMjI5OGM4NDMyYTQwZDYyNmMwNWIiLCJub3RpZnlfdXJsIjoiaHR0cDpcL1wvd3d3LmlleHVlMTAwLmNvbVwvYXBpXC93eHBheVwvbm90aWZ5In19","sign":"9c0783527b7de459ad3b6c04a491fcf1"}' => '',
+)
+[ info ] [ RUN ] app\pay\controller\Api->order[ D:\project\php_wyt_tp\php\application\pay\controller\Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029001s ] mysql:host=127.0.0.1;port=3306;dbname=wyt_tp;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wyt_order` [ RunTime:0.053004s ]
+[ sql ] [ SQL ] INSERT INTO `wyt_order` (`pay_type` , `out_trade_no` , `price` , `real_pay`) VALUES (1 , '1529995692ob4YbR' , 1 , 1) [ RunTime:0.107006s ]
+---------------------------------------------------------------
+[ 2018-06-26T14:48:15+08:00 ] 127.0.0.1 127.0.0.1 GET /php/index/wechatpay.wechat_pay/app_order
+[ info ] 127.0.0.1:1314/php/index/wechatpay.wechat_pay/app_order [运行时间：3.313190s][吞吐率：0.30req/s] [内存消耗：2,019.89kb] [文件加载：61]
+[ info ] [ LANG ] D:\project\php_wyt_tp\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wechatpay.wechat_pay',
+    2 => 'app_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:1314',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'userid=meisheng; password=admin; idstr=1510%2C1508%2C1506%2C1505; is_list3=1; uid=6; safecode=67d13c6fa74da831bcbe7aa7dda43e84; admininfo=think%3A%7B%22id%22%3A%226%22%2C%22username%22%3A%22chenruipeng%22%2C%22email%22%3A%22q707706883%2540qq.com%22%2C%22phone%22%3A%2218826252097%22%2C%22status%22%3A%221%22%2C%22realname%22%3A%22%25E9%2599%2588%25E9%2594%2590%25E9%25B9%258F%22%2C%22roleid%22%3A%227%22%2C%22departmentid%22%3A%225%22%2C%22sex%22%3A%220%22%2C%22createtime%22%3A%222018-03-16%2B17%253A20%253A57%22%2C%22updatetime%22%3A%222018-03-19%2B16%253A42%253A48%22%2C%22lasttime%22%3A%222018-06-25%2B09%253A32%253A06%22%2C%22lastip%22%3A%22127.0.0.1%22%2C%22icon%22%3A%22%252FPublic%252Fupload%252Fmember_icon%252F1_20180319164248_482_F97MFSCM.jpg%22%2C%22reads%22%3A%22%22%2C%22department%22%3A%22%25E7%25BD%2591%25E7%25BB%259C%25E5%25BC%2580%25E5%258F%2591%25E7%25BB%2584%22%2C%22group_id%22%3A%227%22%2C%22title%22%3A%22%25E7%25BB%2584%25E9%2595%25BF%25E5%258A%25A9%25E7%2590%2586%22%2C%22rules%22%3A%221%252C2%252C266%252C376%252C272%252C274%252C273%252C275%252C276%252C326%252C277%252C278%252C282%252C369%252C279%252C378%252C280%252C283%252C285%252C284%252C286%252C287%252C288%252C289%252C291%252C292%252C293%252C294%252C372%252C374%252C290%252C295%252C296%252C297%252C319%252C375%252C370%252C371%252C307%252C308%252C309%252C310%252C311%252C312%252C313%252C314%252C315%252C316%252C317%252C318%252C359%252C298%252C281%252C299%252C300%252C301%252C302%252C303%252C304%252C305%252C306%252C320%252C324%252C321%252C322%252C323%252C325%252C327%252C329%252C328%252C368%252C267%252C330%252C331%252C332%252C270%252C365%252C367%252C377%252C363%252C364%252C271%252C366%252C333%252C334%252C335%252C336%252C362%252C337%252C338%252C339%252C342%252C343%252C344%252C353%252C354%252C355%252C340%252C341%252C345%252C346%252C347%252C348%252C349%252C350%252C351%252C352%252C5%252C29%252C223%252C224%252C225%252C358%252C30%252C31%252C82%22%7D; username=wyt_admin; code_num=0; PHPSESSID=kvu9a25fc60t2d7vsq8fsftgm5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\wechatpay\WechatPay->app_order[ D:\project\php_wyt_tp\php\application\index\controller\wechatpay\WechatPay.php ]
+[ info ] [ LOG ] INIT File
