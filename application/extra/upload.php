@@ -9,7 +9,7 @@ return [
     // | web端 - 文件上传口令
     // +----------------------------------------------------------------------
     'up_token' => 'FFFX123456',
-    
+    'domain' => 'pcgexltmd.bkt.clouddn.com',
     // +----------------------------------------------------------------------
     // | 文件上传的服务器存储路径(本地)
     // +----------------------------------------------------------------------
@@ -46,9 +46,9 @@ return [
     // | 七牛文件上传设置
     // +----------------------------------------------------------------------
     'qupload'=>[
-        'AK' => '', # QINIU_ACCESS_KEY , 必填
-        'SK' => '', # QINIU_SECRET_KEY , 必填
-        'bucket' => '', # 七牛云空间名 , 必填
+        'AK' => 'HnKmMsuuHaevu8SsmVgdcr3f8NT2oJg-LDf2M_s3', # QINIU_ACCESS_KEY , 必填
+        'SK' => 'wkb0yll5_64X2239MBDjxgrnaDW3aon4pLLBV09M', # QINIU_SECRET_KEY , 必填
+        'bucket' => 'bookgroup', # 七牛云空间名 , 必填
         'path_prefix' => 'upload/', # 路径前缀可以用来分类文件，例如： [image/jpg/]your-file-name.jpg 中的 image/jpg/ , 选填
         'expires'=> 7200, # 2小时，expires单位为秒，为上传凭证的有效时间,默认是1个小时
         'sync'=> false      # true文件上传同步七牛云 , false本地服务器不保留该文件仅上传到七牛云

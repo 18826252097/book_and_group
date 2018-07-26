@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:64:"D:\project\book_and_group/application/admin\view\book\index.html";i:1532586416;}*/ ?>
 
 <!DOCTYPE html>
 <html>
@@ -17,7 +18,7 @@
 <body class="bgPadding" style="width: auto">
 <section id="main" class="main_show">
     <el-menu class="el-menu-demo" mode="horizontal">
-        <el-menu-item index="1"><a href="{:url('Index/index')}">主题管理</a></el-menu-item>
+        <el-menu-item index="1"><a href="<?php echo url('Index/index'); ?>">主题管理</a></el-menu-item>
         <el-menu-item index="2" default-active><a href="javascript:;">书本管理</a></el-menu-item>
     </el-menu>
     <br>
@@ -199,7 +200,7 @@
                     limits: limits,
                     keyword: this.keyword
                 };
-                this.$http.post('{:url()}', param).then(function(res) {
+                this.$http.post('<?php echo url(); ?>', param).then(function(res) {
                     var resu = res.body;
                     this.limits = resu.data.limits;
                     this.tableData = resu.data.list;
@@ -211,7 +212,7 @@
                     curr: 1,
                     limits: 100
                 };
-                this.$http.post('{:url("get_menu_list")}', param).then(function(res) {
+                this.$http.post('<?php echo url("get_menu_list"); ?>', param).then(function(res) {
                     this.menu_list = res.body.data;
                 });
             },
@@ -267,7 +268,7 @@
                             menu_id: _self.form.menu_id,
                             remark: edit_form.txt.html(),
                         };
-                        _self.$http.post('{:url("add")}', param).then(function(res) {
+                        _self.$http.post('<?php echo url("add"); ?>', param).then(function(res) {
                             if (res.body.code == 200) {
                                 _self.$message({
                                     type: 'info',
@@ -297,7 +298,7 @@
                     type: 'warning'
                 });
                 prompt.then(function() {
-                    _self.$http.post('{:url("del")}', {
+                    _self.$http.post('<?php echo url("del"); ?>', {
                         book_id: rows[index].id
                     }).then(function(res) {
                         if (res.body.code == 200) {
@@ -343,7 +344,7 @@
                             menu_id: _self.formEdit.menu_id,
                             remark: edit_formedit.txt.html(),
                         };
-                        _self.$http.post('{:url("edit")}', param).then(function(res) {
+                        _self.$http.post('<?php echo url("edit"); ?>', param).then(function(res) {
                             var resu = res.body;
                             _self.$message({
                                 type: 'info',
@@ -369,8 +370,8 @@
                 var E = window.wangEditor;
                 var editor = new E('#'+id_name);
 
-                editor.customConfig.uploadVideoServer = '{:url("ajax/qupload")}';
-                editor.customConfig.uploadImgServer = '{:url("ajax/qupload")}';
+                editor.customConfig.uploadVideoServer = '<?php echo url("ajax/qupload"); ?>';
+                editor.customConfig.uploadImgServer = '<?php echo url("ajax/qupload"); ?>';
                 editor.customConfig.uploadFileName = 'file';
                 editor.customConfig.uploadImgHooks = {
                     customInsert: function (insertImg, result, editor) {

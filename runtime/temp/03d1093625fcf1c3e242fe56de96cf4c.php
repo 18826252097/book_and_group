@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"D:\project\book_and_group/application/admin\view\index\index.html";i:1532570227;}*/ ?>
 
     <!DOCTYPE html>
     <html>
@@ -18,7 +19,7 @@
     <section id="main" class="main_show">
         <el-menu class="el-menu-demo" mode="horizontal">
             <el-menu-item index="1" default-active><a href="javascript:;">主题管理</a></el-menu-item>
-            <el-menu-item index="2"><a href="{:url('Book/index')}">书本管理</a></el-menu-item>
+            <el-menu-item index="2"><a href="<?php echo url('Book/index'); ?>">书本管理</a></el-menu-item>
         </el-menu>
         <br>
         <div class="addClass">
@@ -160,7 +161,7 @@
                         limits: limits,
                         keyword: this.keyword
                     };
-                    this.$http.post('{:url()}', param).then(function(res) {
+                    this.$http.post('<?php echo url(); ?>', param).then(function(res) {
                         var resu = res.body;
                         this.limits = resu.data.limits;
                         this.tableData = resu.data.list;
@@ -212,7 +213,7 @@
                             var param = {
                                 name: _self.form.name
                             };
-                            _self.$http.post('{:url("add")}', param).then(function(res) {
+                            _self.$http.post('<?php echo url("add"); ?>', param).then(function(res) {
                                 if (res.body.code == 200) {
                                     _self.$message({
                                         type: 'info',
@@ -242,7 +243,7 @@
                         type: 'warning'
                     });
                     prompt.then(function() {
-                        _self.$http.post('{:url("del")}', {
+                        _self.$http.post('<?php echo url("del"); ?>', {
                             menu_id: rows[index].id
                         }).then(function(res) {
                             if (res.body.code == 200) {
@@ -279,7 +280,7 @@
                                 status: _self.formEdit.status,
                                 name: _self.formEdit.name
                             };
-                            _self.$http.post('{:url("edit")}', param).then(function(res) {
+                            _self.$http.post('<?php echo url("edit"); ?>', param).then(function(res) {
                                 var resu = res.body;
                                 _self.$message({
                                     type: 'info',

@@ -43,6 +43,7 @@ class Book extends Base
             'status' => 1,
             'del' => 1
         ];
-        return db('menu')->field('id,name')->where($map)->select();
+        $resu = db('menu')->field('id,name')->where($map)->select();
+        return ['code'=>200,'msg'=>'成功','data'=>$resu];
     }
 }

@@ -5,7 +5,7 @@
  * Date: 2018/5/22
  * Time: 14:32
  */
-namespace app\admin\Model;
+namespace app\admin\model;
 use think\Model;
 
 class Book extends Model{

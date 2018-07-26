@@ -19,7 +19,7 @@ class Qupload implements IUpload{
     private static $config = [
         # 文件上传的服务器存储路径(本地)
         'upload_path'=>'./public/uploads',
-    
+        'domain' => '',
         # 七牛文件上传设置
         'qupload'=>[
             'AK' => '', # QINIU_ACCESS_KEY , 必填
@@ -167,7 +167,7 @@ class Qupload implements IUpload{
                 'data' => [
                     "name" => $real_file_name,#原本客户端保存的文件名
                     "ext" => $ext,
-                    "savepath" => $key,
+                    "savepath" => 'http://'.self::$config['domain'].'/'.$key,
                     "savename" => $key,
                     "size" => $size
                 ]
